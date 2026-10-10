@@ -7,7 +7,6 @@
 
 * **Smart Recipe Search:** Filter and search recipes dynamically by title or ingredients.
 * **Dynamic Serving Scaler:** Recalculate ingredient quantities automatically based on custom serving sizes.
-* **OCR Text Scanner:** Extract ingredient text and instructions directly from uploaded recipe images using Tesseract OCR integration.
 * **Category & Favoriting:** Organize recipes into categories and bookmark quick favorites.
 * **User Authentication:** Secure registration and login session management.
 
