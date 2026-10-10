@@ -57,3 +57,24 @@ Special thanks to supervisors and faculty members:
 * Miss Jeena Pokhrel
 * Sir Gagan Poudel
 * Sir Ujwal Pudasaini
+
+# Hi there, I'm Saraswati!
+
+**Diploma in IT Graduate** aspiring to specialize in Software Engineering and Web Development.
+Passionate about building functional full-stack web applications and working with databases.
+
+---
+
+### Tech Stack & Skills
+* **Languages:** PHP, JavaScript, HTML5, CSS3, SQL, Python
+* **Databases:** MySQL, MongoDB
+* **Tools & Platforms:** Git, GitHub, VS Code, XAMPP, Tesseract OCR
+
+---
+
+### Featured Project
+* **[My Recipe Book](https://github.com/saraswatimagar007/MyRecipeBook):** A full-stack web application featuring dynamic portion scaling and OCR recipe scanning.
+
+---
+
+**Connect with me:** sghartimagar976@gmail.com
