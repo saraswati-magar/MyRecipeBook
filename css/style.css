@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9 !important; /* Clean, soft light gray */
+    color: #334155 !important;            /* Default dark slate text that's easy on the eyes */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05) !important;
+    padding: 50px 60px !important;      
+    width: 100% !important;
+    max-width: 750px !important;       
+    box-sizing: border-box !important;
+}
+
+.card h2, .card h1 {
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    color: #1e293b !important;
+    margin-top: 0 !important;
+    margin-bottom: 28px !important;
+    text-align: center !important;
+}
+
+.card input[type="text"],
+.card input[type="email"],
+.card input[type="password"],
+.card input[type="number"],
+.card textarea,
+.card select {
+    width: 100% !important;
+    height: 56px !important;              
+    padding: 0 20px !important;          
+    background: #f8fafc !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 10px !important;       
+    font-size: 17px !important;
+    color: #1e293b !important;
+    margin-bottom: 22px !important;
+    box-sizing: border-box !important;
+}
+
+.card input:focus {
+    border-color: #606c88 !important;
+    background: #ffffff !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(96, 108, 136, 0.15) !important;
+}
+
+.card label {
+    display: block !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    color: #475569 !important;
+    margin-bottom: 6px !important;
+}
+
+.card button[type="submit"], 
+.card .btn-primary {
+    width: 100% !important;
+    height: 56px !important;
+    background: #2563eb !important;      
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-size: 18px !important;        
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    margin-top: 12px !important;
+    margin-bottom: 24px !important;
+}
+
+.card button[type="submit"]:hover {
+    background: #1d4ed8 !important;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card p, .card .auth-footer {
+    text-align: center !important;
+    font-size: 14px !important;
+    color: #64748b !important;
+    margin: 0 !important;
+}
+
+.card a {
+    color: #3f4c6b !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+
+.card a:hover {
+    text-decoration: underline !important;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Force the row spacing to override inline styles */
+    .dynamic-row {
+        display: flex !important;
+        gap: 18px !important; /* Wider gap between fields */
+        margin-bottom: 15px !important;
+        align-items: center;
+    }
+
+  /* Make the selection box taller from top and bottom */
+.select2-container--default .select2-selection--single {
+    height: 56px !important; /* Increased total height */
+    padding: 12px 14px !important; /* More vertical padding */
+    border: 1px solid #ccc !important;
+    border-radius: 6px !important;
+}
+
+/* Center text vertically and keep it aligned */
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 32px !important;
+    font-size: 16px !important; 
+}
+
+/* Align the arrow to match the new taller height */
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 54px !important;
+    right: 10px !important;
+}
+
+    /* Global & Typography Styling */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f7f6;
+        color: #333;
+        margin: 0;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    body.auth-body, body {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 100vh !important;
+    background-color: #f1f5f9 !important;
+    margin: 0 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+    /* Made the container much wider and spacious */
+    .form-container {
+        background: #ffffff;
+        width: 100%;
+        max-width: 950px; 
+        padding: 50px 60px;
+        border-radius: 16px;
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+        font-size: 32px;
+        color: #2c3e50;
+        margin-bottom: 25px;
+        border-bottom: 2px solid #eaeaea;
+        padding-bottom: 12px;
+    }
+
+    /* Hide all steps by default */
+    .form-step {
+        display: none !important;
+    }
+
+    /* Show only the active step */
+    .form-step.active {
+        display: block !important;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(5px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Larger, bolder labels and inputs */
+    label {
+        display: block;
+        font-size: 18px;
+        font-weight: 650;
+        margin-bottom: 10px;
+        color: #334155;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea,
+    select {
+        width: 100%;
+        padding: 16px 18px;
+        font-size: 18px;
+        border: 2px solid #cbd5e1;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        box-sizing: border-box;
+        transition: border-color 0.2s;
+    }
+
+    input[type="text"]:focus,
+    input[type="number"]:focus,
+    textarea:focus,
+    select:focus {
+        border-color: #3b82f6;
+        outline: none;
+        box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 140px;
+    }
+
+    /* Dynamic Row Grouping (Horizontal alignment) */
+    .dynamic-row {
+    display: flex !important;
+    gap: 15px !important;
+    margin-bottom: 15px !important;
+    align-items: center !important;
+    width: 100%;
+    }
+
+    /* Tell the Select2 wrapper containers to respect flex proportions */
+    .dynamic-row .select2-container {
+    flex: 1 !important;
+    box-sizing: border-box !important;
+    }
+
+    /* Set individual proportions for Qty, Unit, and Ingredient name */
+    .dynamic-row .select2-container:nth-child(1) { flex: 1 !important; }
+    .dynamic-row .select2-container:nth-child(2) { flex: 1.5 !important; }
+    .dynamic-row .select2-container:nth-child(3) { flex: 3 !important; }
+
+    /* If you have a native select or fallback, style it too */
+    .dynamic-row select:not(.select2-hidden-accessible) {
+        flex: 1;
+    }
+
+    /* Make the Select2 selection box nice, large, and tall */
+    .select2-container--default .select2-selection--single {
+        height: 52px !important;
+        padding: 10px 14px !important;
+        border: 1px solid #ccc !important;
+        border-radius: 6px !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    /* Center text inside the dropdown */
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        line-height: normal !important;
+        font-size: 16px !important;
+        padding-left: 0 !important;
+    }
+
+    /* Fix arrow alignment */
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+        height: 50px !important;
+        right: 10px !important;
+    }
+
+    .dynamic-row input {
+        margin-bottom: 0;
+    }
+
+    /* Buttons Styling */
+    .btn-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    button {
+        padding: 14px 28px;
+        font-size: 18px;
+        font-weight: 600;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    .btn-next, .btn-submit {
+        background-color: #3b82f6;
+        color: white;
+        margin-left: auto;
+    }
+
+    .btn-next:hover, .btn-submit:hover {
+        background-color: #2563eb;
+    }
+
+    .btn-prev {
+        background-color: #e2e8f0;
+        color: #475569;
+    }
+
+    .btn-prev:hover {
+        background-color: #cbd5e1;
+    }
+
+    .btn-add {
+        flex: 1; 
+        margin-bottom: 0;
+    
+    }
+
+    .btn-add:hover {
+        background-color: #059669;
+    }
+
+    .checkbox-label {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: normal;
+        cursor: pointer;
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    .checkbox-label input {
+        width: 22px;
+        height: 22px;
+        margin-bottom: 0;
+    }
+
+    .btn-remove {
+        background-color: #fee2e2;
+        color: #ef4444;
+        border: none;
+        padding: 14px 18px;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+    
+    .btn-remove:hover {
+        background-color: #fecaca;
+    }
+
+    .step-block {
+        background: #f8fafc; 
+        padding: 20px; 
+        border-radius: 12px; 
+        margin-bottom: 20px; 
+        border: 2px solid #e2e8f0;
+    }
+
+    /* RESPONSIVE DESIGN FOR MOBILE PHONES */
+    @media (max-width: 768px) {
+        body {
+            padding: 20px 10px;
+            align-items: center; /* Center the card nicely on the phone screen */
+        }
+
+        .form-container {
+            width: 92%; /* Leaves a nice 4% gap on both the left and right sides */
+            max-width: 450px;
+            padding: 25px 20px;
+            border-radius: 14px;
+            /* Brought back a soft shadow so it looks like a nice card */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); 
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        /* Stack ingredient inputs vertically on phones */
+        .dynamic-row {
+        display: flex !important;
+        gap: 15px !important;
+        margin-bottom: 15px !important;
+        align-items: flex-start !important;
+        width: 100%;
+        }
+
+        /* Ensure native inputs inside the ingredient row match custom heights */
+        .dynamic-row input[type="number"],
+        .dynamic-row input[type="text"] {
+            height: 52px !important;
+            padding: 0 14px !important;
+            border-radius: 6px !important;
+            border: 1px solid #ccc !important;
+            box-sizing: border-box !important;
+        }
+
+        .dynamic-row select {
+    height: 52px !important;
+    padding: 0 14px !important;
+    border-radius: 10px !important;
+    border: 2px solid #cbd5e1 !important;
+    box-sizing: border-box !important;
+}
+
+        /* Stack navigation buttons nicely on mobile screens */
+        .btn-container {
+            flex-direction: column-reverse;
+            gap: 12px;
+        }
+
+        .btn-container button {
+            width: 100%;
+            margin-left: 0 !important;
+        }
+
+        label {
+            font-size: 16px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        select {
+            font-size: 16px;
+            padding: 14px;
+        }
+    }   
+
+    /* Delete Confirmation Modal Styles */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#modalMessage {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #1e293b;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#modalNoBtn {
+    padding: 8px 16px;
+    background: #e2e8f0;
+    color: #334155;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#modalNoBtn:hover {
+    background: #cbd5e1;
+}
+
+#modalYesBtn {
+    padding: 8px 16px;
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#modalYesBtn:hover {
+    background: #dc2626;
+}
+
+/* prep time inline select boxes */
+select.prep-select {
+    width: 90px !important;
+    margin-bottom: 0 !important;
+    display: inline-block !important;
+}
+
+label.required::after {
+    content: " *";
+    color: #ef4444;
+}
